@@ -1,24 +1,29 @@
-// 1.a)
-var nums;
-nums=[1,2,3,4,5];
-console.log(nums[1]);
-// writes to the console: 2; 
-//2 = nums.index[1] of the 4 values.
+// // 1.a)
+// var nums;
+// nums=[1,2,3,4,5];
+// console.log(nums[1]);
+// // writes to the console: 2; 
+// //2 = nums.index[1] of the 4 values.
 
-// 1.b)
-var nums = [1,2,3,4,5]; 
-var arrayLength = nums.length;
-for (i=0; i < nums.length; i++ ) {
-  console.log(nums[i] + ', ');
-}
+// // 1.b)
+// var nums = [1,2,3,4,5]; 
+// var arrayLength = nums.length;
+// for (var i = 0; i < arrayLength; i++ ) {
+//   console.log(nums[i]);
+// }
+
 // 1.c)
-var sum = [1,2,3,4,5].reduce(add, 0);
-
-function add(a, b) {
-    return a + b;
+var numsArray = [1,2,3,4,5];
+var sum = 0;
+function sumOfMyArray() {
+    for (var i = 0; i < numsArray.length; i++) {
+      sum += numsArray[i];
+    }
+    // return sum;
 }
+sumOfMyArray();
+console.log(sum /*sumOfMyArray()*/);
 
-console.log(sum);
 // 1.d)
 var numArray = [1,2,3,4,5]; 
 var max = Math.max.apply(Math, numArray); 
@@ -34,23 +39,23 @@ console.log('The average is: ' + average);
 a.push('I pushed to the array: ' + average);
 console.log(a);
 
-// 2.a)
-var string = 'Home sweet home';
-console.log(string.split(' '));
-// 2.b)
-var str = "Home is where the heart is";
-var res = str.split(" ");
-console.log(res);
-res.sort();
-console.log(res);
-// 2.c)
-var str = "Home is where the heart is";
-var res = str.split(" ");
-console.log(res);
-res.sort();
-console.log(res);
-var method = res.join();
-console.log(method);
+// // 2.a)
+// var string = 'Home sweet home';
+// console.log(string.split(' '));
+// // 2.b)
+// var str = "Home is where the heart is";
+// var res = str.split(" ");
+// console.log(res);
+// res.sort();
+// console.log(res);
+// // 2.c)
+// var str = "Home is where the heart is";
+// var res = str.split(" ");
+// console.log(res);
+// res.sort();
+// console.log(res);
+// var method = res.join();
+// console.log(method);
 
 // 3.)
 var a = ['coding campus'];
@@ -85,7 +90,7 @@ for(var i = 0; i < rows; i++){
 }
 console.log(grid);
 // 6.)
-?
+// ?
 
 
 
